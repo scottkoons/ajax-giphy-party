@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Giphy Party!</title>
+  </head>
+
+  <body>
+    <div class="container my-5">
+      <div class="text-center">
+        <h1 class="display-4 text-center mb-4 text-uppercase">
+          AJAX Giphy Party
+        </h1>
+
+        <form action="" id="searchForm">
+          <div class="row">
+            <div class="col-7">
+              <input
+                type="text"
+                class="form-control"
+                id="giphySearch"
+                placeholder="Enter Giphy Search"
+              />
+            </div>
+            <div class="col">
+              <button class="btn btn-info btn-block" id="searchGiphy">
+                Search Giphy
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-danger btn-block" id="removeImg">
+                Remove Images
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <!-- ---- Add display area for giphy ---- -->
+      <div id="giphy-area" class="row"></div>
+
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
