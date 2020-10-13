@@ -24,7 +24,7 @@ const deleteBtn = document
 async function getCategory(category) {
   console.log(`seach is passed in as category & set to ${category}`);
   try {
-    const url = `http://api.giphy.com/v1/gifs/search?q=${category}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`;
+    const url = `https://api.giphy.com/v1/gifs/search?q=${category}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`;
     const response = await axios.get(url); // Calls the generated URL
     let random = Math.floor(Math.random() * 49); // Generates a random number between 0 and 49
     let gliphyURL = response.data.data[random].images.downsized.url; // Retrieves the random search URL
